@@ -1183,7 +1183,8 @@ public class Main extends Application {
             flyingAnimation = null;
             disable.set(false);
         }
-               
+
+
         private void finish() {
             stopTask();
             ivCanvasSnapshot.setTranslateX(canvas.getTranslateX());
