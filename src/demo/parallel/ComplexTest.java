@@ -1,17 +1,30 @@
-/*package demo.parallel;
+package demo.parallel;
 
 /**
  * Created by Chamamilla on 01.05.2017.
  */
-/*public class ComplexTest {
+
+import org.junit.Test;
+
+//import static org.junit.Assert.assertEquals;
+import org.junit.*;
+public class ComplexTest {
+    @Test
     public void divTest(){
-        Complex a = new Complex(13,1);
-        Complex b = new Complex(7,-6);
+        Complex a = new Complex(3,5);
+        Complex b = new Complex(4,2);
         Complex c = a.div(b);
-        if (c.)
+        Complex d = new Complex(1.1, 0.7);
+        //assertEquals("complex not equal",c , d);
+        Assert.assertTrue(c.equals(d));
+    }
 
+    @Test
+    public void minusTest() {
+        Complex a = new Complex(4, 2);
+        Complex b = new Complex(1, 5);
 
-
+        Complex c = new Complex(3, -3);
+        Assert.assertTrue(c.equals(a.minus(b)));
     }
 }
-*/
